@@ -155,8 +155,8 @@
     /* function to add objects to map */
 
 function getColor(feature){
-  switch (feature.properties["subject"]) {
-            case 'Uncategorized':
+  switch (feature.properties.locale) {
+            case 'Rural':
                 return  'orange';
             default:
                 return 'black';
